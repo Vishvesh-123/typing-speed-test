@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <p>Type the following text:</p>
+        <div id="quote">This is a simple typing speed test example.</div>
+        <textarea id="typingInput" placeholder="Start typing here..." oninput="checkTyping()" disabled></textarea>
+        <button id="startBtn" onclick="startTest()">Start Test</button>
+
+        <div id="results">
+            <p id="timer">Time remaining: 60s</p>
+            <p id="wordCount">Words Typed: 0</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
